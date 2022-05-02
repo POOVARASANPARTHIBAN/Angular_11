@@ -53,9 +53,9 @@ export class EmployeeFormComponent implements OnInit {
 
   loadEmployee() {
     let data = {
-      firstName: 'sumi',
-      lastName: 'murugesan',
-      mobile: '1212121212'
+      firstName: 'Flower',
+      lastName: 'King',
+      mobile: '27092709'
     }
     this.employeeFormGroup.patchValue(data);
   }
