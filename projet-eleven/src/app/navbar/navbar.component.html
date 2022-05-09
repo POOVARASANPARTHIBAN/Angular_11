@@ -1,0 +1,67 @@
+<!-- <div class="home">
+<mat-toolbar color="primary" class="mat-elevation-z6">
+    <span><mat-icon>android</mat-icon>ANGULAR 11</span>
+
+    <div class="space "></div>
+
+    <a mat-button routerLink="Home">Home</a>
+    <a mat-button routerLink="Projects">Projects</a>
+    <a mat-button routerLink="About">About</a>
+</mat-toolbar>
+
+MY ANGULAR11 LANDING PAGE
+</div> -->
+<mat-toolbar>
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+    </button>
+    ANGULAR 11<mat-icon>android</mat-icon>
+
+    <div class="space "></div>
+
+    <a mat-button routerLink="projects">Projects</a>
+
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav">
+        <img class="avatar" src="../../assets/images/my_picture.jpg">
+        <h4 class="name">POOVARASAN</h4>
+        <p class="designation">Angular Team</p>
+
+        <mat-divider></mat-divider>
+
+        <button class="menu-button" [routerLink]="['Home']">
+            <mat-icon>home</mat-icon><span>Home</span>
+        </button>
+        <button class="menu-button" [routerLink]="['Profile']">
+            <mat-icon>person</mat-icon><span>Profile</span>
+        </button>
+        <button class="menu-button" [routerLink]="['About']">
+            <mat-icon>info</mat-icon><span>About</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>help</mat-icon><span>Help</span>
+        </button>
+    </mat-sidenav>
+
+    
+    <mat-sidenav-content>
+        <div class="content">
+            <h1>WELCOME OUR ANGULAR RPROJECT</h1>
+        </div>
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+

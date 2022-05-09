@@ -1,0 +1,81 @@
+.space {
+    flex: 1 1 ;
+}
+/* .home{
+    background-image: url('../../assets/images/png-gray.jpg');
+    
+}  */
+mat-toolbar{
+    background: #004a9f;
+    color: white;
+}
+mat-sidenav{
+    margin: 16px;
+    width:200px;
+    border-right:none;
+    background: #002bc5;
+    color: wheat;
+    border-radius:10px;
+    padding: 16px;
+    text-align:center;
+}
+.content{
+    height: calc(100vh-98px);
+    margin:16px;
+    margin-left:32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    color: lightgrey;
+
+    border-radius: 10px;
+}
+
+/* mat-sidenav-content{
+    background-image: url('../../assets/images/my_picture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100;
+} */
+
+mat-sidenav-container{
+    height: calc(100vh - 65px);
+}
+
+.menu-button{
+    width: 100%;
+    margin-top: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+}
+mat-icon{
+    margin-right: 8px;
+}
+
+.avatar{
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 70%;
+    height: 28%;
+    vertical-align: middle;
+}
+.name{
+    margin: 0;
+    margin-top: 12px;
+    font-weight: normal;
+}
+.designation{
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: lightgray;
+}
+
+mat-divider{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
